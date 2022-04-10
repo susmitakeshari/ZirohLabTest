@@ -27,4 +27,4 @@ Step-2: Run the application.
 * [Retrofit](https://square.github.io/retrofit2/)
 * [Api](https://jsonplaceholder.typicode.com/albums/$albumId%/photos)
 * [Room](https://developer.android.com/jetpack/androidx/releases/room)
-*[Picsso](https://square.github.io/picasso/)
+*[Picsso](https://square.github.io/picasso/) 
