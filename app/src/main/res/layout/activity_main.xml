@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="#DCD8D8"
+        android:id="@+id/linaer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="9"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:textColor="#F42A2A"
+            android:id="@+id/title"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:text="ZirohLab"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_weight="6"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_width="0dp"
+            android:layout_height="30dp">
+            <TextView
+                android:layout_marginRight="25dp"
+                android:id="@+id/totalPoint"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#077E0C"/>
+            <Button
+                android:id="@+id/logout"
+                android:visibility="visible"
+                android:layout_marginLeft="15dp"
+                android:background="@null"
+                android:paddingTop="3dp"
+                android:drawableTop="@drawable/ic_logout"
+                android:layout_width="40dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_below="@+id/linear"
+        android:id="@+id/albumId"
+        android:textColor="#F42A2A"
+        android:textSize="15sp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Album"/>
+    <RelativeLayout
+        android:layout_below="@+id/albumId"
+        android:layout_width="409dp"
+        android:layout_height="678dp">
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/idNestedSV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/row_album_list" />
+
+                <ProgressBar
+                    android:id="@+id/idPBLoading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</LinearLayout>
+
+
+
+</RelativeLayout>
