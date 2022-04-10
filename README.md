@@ -1,14 +1,14 @@
 # ZirohLabTest
 # Album Fetch Data
-This repository contains Swipeable Card ( LiveData , View Model and MVVM with retrofit for consuming rest api and Room )
+This repository contains  Album List ( LiveData , View Model and MVVM with retrofit for consuming rest api and Room )
 
 ## About This Project
 
-In this project we will build a album list  app using android architecture components <B>( LiveData and ViewModel )</B> usning <B>MVVM</B></B> usning <B>ROOM</B> pattern by the help of [Retrofit](https://square.github.io/retrofit/) for consuming rest api data from 
+In this project we will build a album list  app using android architecture components <B>( LiveData and ViewModel )</B> usning <B>MVVM</B></B> usning <B>SharedPreferences</B></B> usning <B>ROOM</B> pattern by the help of [Retrofit](https://square.github.io/retrofit/) for consuming rest api data from 
 [Fetch Api](https://jsonplaceholder.typicode.com/albums/$albumId%/photos)
 
 ## App Features
-* User Login
+* User Login with session
 * Show Albnum List
 * User Scrolls to the bottom, fetch another set of data and display them.
 * Remove Album Item
